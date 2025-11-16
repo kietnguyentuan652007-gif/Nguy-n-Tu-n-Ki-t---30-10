@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dino Runner Mario — by Kiet Nguyen</title>
+
+<style>
+    html, body {
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        background:#5fc7ff;
+        user-select:none;
+        font-family: monospace;
+    }
+
+    #gameCanvas {
+        display:block;
+        margin:0;
+        padding:0;
+        width:100vw;
+        height:100vh;
+        background:#5fc7ff;
+    }
+
+    #meter {
+        position:fixed;
+        top:10px;
+        left:10px;
+        padding:4px 10px;
+        background:rgba(0,0,0,0.35);
+        border-radius:6px;
+        color:white;
+        font-size:18px;
+        font-weight:bold;
+    }
+
+    #signature {
+        position:fixed;
+        bottom:8px;
+        left:8px;
+        color:white;
+        font-size:12px;
+        opacity:0.8;
+    }
+</style>
+</head>
+
+<body>
+<canvas id="gameCanvas"></canvas>
+<div id="meter">0 m</div>
+<div id="signature">Made by Kiet Nguyen</div>
+
+<script src="game.js"></script>
+</body>
+</html>
